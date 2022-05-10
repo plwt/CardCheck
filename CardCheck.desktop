@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Name=CardCheck
+Comment=Payment card validator for Linux
+Exec=/usr/bin/x-terminal-emulator -e "/opt/CardCheck/src/CardCheck.sh"
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/opt/CardCheck/src/icon.png
+Categories=GNOME;GTK;Development;
+Name[en_GB]=CardCheck

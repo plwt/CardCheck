@@ -31,17 +31,19 @@ def getcarddate():
     
     date_entry = input('Enter the expiry date of the  in DD-MM-YYYY format: ')
     year, month, day = map(int, date_entry.split('-'))
+    
+    # NameError: name 'datetime' is not defined
     carddate = datetime.date(day, month, year)
     return getcarddate
 
 def check_date():
     
-        carddate=getcarddate()
-        """Checks current date against the credit card's date. If it is valid, returns True; else False."""
-        carddate = datetime.datetime.strptime(self.card_date, "%d/%m/%Y").date()
-        if datetime.date.today() < carddate:
-            print("This card has not expired")
-        else:
-            print("This card has expired")
+    carddate=getcarddate()
+    """Checks current date against the credit card's date. If it is valid, returns True; else False."""
+    carddate = datetime.datetime.strptime(self.card_date, "%d/%m/%Y").date()
+    if datetime.date.today() < carddate:
+        print("This card has not expired")
+    else:
+        print("This card has expired")
 
 check_date()

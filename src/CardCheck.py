@@ -24,7 +24,7 @@ def card_date():
     now = datetime.now()
     now = date(year=now.year, month=now.month, day=1)
 
-    card_expiry = input("Enter your payment card expiry date (MM/YY): ")
+    card_expiry = input("Enter your payment card expiry date in the format MM/YY: ")
     expiry = datetime.strptime(card_expiry, "%m/%y")
     expiry = date(year=expiry.year, month=expiry.month, day=1)
 
